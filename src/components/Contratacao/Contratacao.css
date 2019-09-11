@@ -1,0 +1,166 @@
+#contratacao {
+  background-color: #eff4f8;
+  height: 100%;
+}
+
+#contratacao .celular {
+  padding: 10% 0;
+  height: 100%;
+  text-align: center;
+}
+
+#contratacao .celular .samsung-s9 {
+  width: 285px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+#contratacao .box-infos {
+  max-width: 500px;
+  border-radius: 16px;
+  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.06);
+          box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.06);
+  background-color: #ffffff;
+  margin: auto 0;
+}
+
+#contratacao .box-infos .info-aparelho {
+  padding: 25px;
+  border-bottom: 1px solid rgba(150, 180, 205, 0.24);
+}
+
+#contratacao .box-infos .info-aparelho .seguro {
+  font-family: Oscine;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #767d83;
+  margin-bottom: 0rem;
+}
+
+#contratacao .box-infos .info-aparelho .aparelho {
+  font-family: Oscine;
+  font-size: 32px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #324b68;
+}
+
+#contratacao .box-infos .cotacao {
+  padding: 15px 25px 15px 25px;
+  border-bottom: 1px solid rgba(150, 180, 205, 0.24);
+}
+
+#contratacao .box-infos .cotacao .quero-proteger {
+  width: 100%;
+  height: 56px;
+  font-family: Oscine;
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+#contratacao .box-infos .cotacao .valor {
+  font-family: Oscine;
+  font-size: 48px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #324b68;
+  margin-bottom: 0rem;
+}
+
+#contratacao .box-infos .cotacao .valor spam {
+  font-family: Oscine;
+  font-size: 24px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #767d83;
+}
+
+#contratacao .box-infos .cotacao .md-checkbox label {
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #324b68;
+  padding-left: 5px;
+}
+
+#contratacao .box-infos .cobertura {
+  text-align: center;
+  margin-top: 20px;
+}
+
+#contratacao .box-infos .cobertura .wrapper {
+  padding: 0 15px 25px 15px;
+}
+
+#contratacao .box-infos .cobertura .container-btns {
+  padding: 0;
+}
+
+#contratacao .box-infos .cobertura .btn-cobertura {
+  cursor: none;
+  border-radius: 10px;
+  pointer-events: none;
+}
+
+#contratacao .box-infos .cobertura .btn-cobertura img {
+  padding: 5px;
+  margin-bottom: 5px;
+}
+
+#contratacao .box-infos .cobertura .cobertura-contra {
+  font-family: Oscine;
+  font-size: 18px;
+  color: #767d83;
+  margin: 1.5rem;
+}
+
+#contratacao .box-infos .mais-informacoes {
+  font-family: Rubik;
+  font-size: 14px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.29;
+  letter-spacing: normal;
+  color: #767d83;
+  text-align: left;
+}
+
+#contratacao .box-infos .mais-informacoes spam {
+  font-weight: 500;
+  color: #324b68;
+}
+
+#contratacao .v-input--selection-controls {
+  margin-top: 0;
+}
+
+#contratacao .v-input__slot {
+  padding: 0;
+}
+
+#contratacao .v-input__slot label {
+  margin-bottom: 0;
+}
+
+#contratacao .v-select .v-select__selections {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+}
+/*# sourceMappingURL=Contratacao.css.map */

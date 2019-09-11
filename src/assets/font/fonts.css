@@ -1,0 +1,29 @@
+@font-face {
+	font-family: 'Oscine';
+	src:  url('~@/assets/font/Oscine/Oscine_W_Rg.woff2') format('woff2'),
+				url('~@/assets/font/Oscine/Oscine_W_Rg.woff') format('woff');
+	font-weight: medium;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Oscine';
+	src:  url('~@/assets/font/Oscine/Oscine_W_Bd.woff2') format('woff2'),
+				url('~@/assets/font/Oscine/Oscine_W_Bd.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Rubik';
+	src:  url('~@/assets/font/Rubik/Rubik-Medium.ttf') format('woff2');
+	font-weight: medium;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Rubik';
+	src:  url('~@/assets/font/Rubik/Rubik-Bold.ttf') format('woff2');
+	font-weight: bold;
+	font-style: normal;
+}
