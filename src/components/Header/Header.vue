@@ -2,7 +2,7 @@
     <div id='header'>
 		<b-navbar toggleable="lg" 
 				type="dark" 
-				:variant="[ changeHeader ? 'info' : 'info-positivo']">
+				:variant="changeHeader ? 'info' : 'info-positivo'">
 			<b-container>
 				<router-link to="/" >
 					<b-navbar-brand 

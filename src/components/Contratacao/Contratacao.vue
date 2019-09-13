@@ -3,11 +3,11 @@
 		<Header></Header>
 		<b-container>
 			<b-row>
-				<b-col class="celular">
+				<b-col sm='12' md='6' class="celular">
 					<img :src=cellphonesDetails.imageSrc
 						class="samsung-s9">
 				</b-col>
-				<b-col class="box-infos">
+				<b-col sm='12' md='6' class="box-infos">
 					<div class="info-aparelho">
 						<p class="seguro">
 							Seguro para o aparelho:
@@ -21,8 +21,8 @@
 						<p v-else class="valor">{{cellphonesDetails.completePrice}} <spam>por mês</spam></p>
 						<v-checkbox
 							label="Somente contra roubo"
-              color="success"
-              hide-details
+							color="success"
+							hide-details
 							v-model="somenteRoubo" 
 							@change="() => zeraParcelas()"></v-checkbox>
 						<div class="md-layout-item">
@@ -69,7 +69,7 @@
 							<b-col class='container-btns'>
 								<b-button
 									class="btn-cobertura"
-									:variant="[somenteRoubo ? 'outline-secondary' : 'success']" 
+									:variant="somenteRoubo ? 'outline-secondary' : 'success'" 
 									size='lg'>
 									<img v-if="somenteRoubo" src="~@/assets/svg/btn-close.svg" class="Path">
 									<img v-else src="~@/assets/svg/path.svg" class="Path">
@@ -79,7 +79,7 @@
 							<b-col class='container-btns'>
 								<b-button 
 									class="btn-cobertura" 
-									:variant="[somenteRoubo ? 'outline-secondary' : 'success']" 
+									:variant="somenteRoubo ? 'outline-secondary' : 'success'" 
 									size='lg'>
 									<img v-if="somenteRoubo" src="~@/assets/svg/btn-close.svg" class="Path">
 									<img v-else src="~@/assets/svg/path.svg" class="Path">
@@ -94,6 +94,9 @@
 			<b-modal centered v-model="modalShow" hide-footer hide-top>
 				<Login ></Login>
 			</b-modal>
+			<b-modal centered v-model="modalForgetShow" hide-footer hide-top>
+				<RedefinePassword></RedefinePassword>
+			</b-modal>
 		</b-container>
 	</div>
 </template>
@@ -103,19 +106,24 @@
 
 	import Header from '../Header/Header';
 	import Login from "../Login/Login";
+	import RedefinePassword from '../RedefinePassword/RedefinePassword';
+
 	export default {
 		name:'Contratacao',
 		components: {
 			Header,
-			Login
+			Login,
+			RedefinePassword
 		},
 		data() {
 			return {
 				somenteRoubo: false,
-				modalShow: true,
+				modalShow: false,
 				modalForgetShow: false,
 				uuid: '',
-				cellphonesDetails: [],
+				cellphonesDetails: [
+					{name: ''}
+				],
 				fullPayment: [],
 				parcialPayment: [],
 				bleh: null,
@@ -129,7 +137,7 @@
 				.get(`http://192.168.1.189:8080/cell-phone-insurance/v1/phones/${this.uuid}`)
 				.then(response => {
 					this.cellphonesDetails = response.data
-					console.log(this.cellphonesDetails)
+					// console.log(this.cellphonesDetails)
 					this.cellphonesDetails.completePaymentOptions.map( (cell, index) => {
 						return this.fullPayment.push({parcela: index+1, preco: cell})
 					})
@@ -142,7 +150,6 @@
 		},
 		methods: {
 			zeraParcelas() {
-				console.log(this.bleh)
 				this.bleh = null
 			}
 		},

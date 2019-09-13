@@ -64,7 +64,7 @@
 
 #home .chamada-cotacao {
   position: relative;
-  top: 15%;
+  top: 4%;
 }
 
 .v-menu .v-menu__content {
@@ -78,6 +78,18 @@
           box-shadow: none;
 }
 
+.v-menu .v-input {
+  width: 360px;
+}
+
+.v-menu .v-input .combobox:hover, .v-menu .v-input .combobox:focus, .v-menu .v-input .combobox:visited {
+  width: 100%;
+}
+
+.v-menu .v-input:hover {
+  width: 100%;
+}
+
 .v-input__slot {
   background-color: white;
   height: 50px;
@@ -89,5 +101,18 @@
 .v-input__slot:before, .v-input__slot:after {
   border: none;
   border-color: transparent !important;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  #home .chamada-cotacao {
+    position: relative;
+    top: 0%;
+  }
+  #home .celular-protegid {
+    font-size: 45px;
+  }
+  #home .oferecemos {
+    font-size: 20px;
+  }
 }
 /*# sourceMappingURL=Home.css.map */

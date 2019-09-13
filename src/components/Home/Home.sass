@@ -50,7 +50,7 @@
 		z-index: 999
 	.chamada-cotacao
 		position: relative
-		top: 15%
+		top: 4%
 
 .v-menu
 	.v-menu__content
@@ -61,6 +61,15 @@
 		position: absolute
 		z-index: -9 !important
 		box-shadow: none
+	.v-input
+		width: 360px
+		.combobox
+			&:hover,
+			&:focus,
+			&:visited
+				width: 100%
+		&:hover
+			width: 100%
 .v-input__slot
 	background-color: white
 	height: 50px
@@ -71,3 +80,15 @@
 	&:after		
 		border: none
 		border-color: transparent !important
+
+@media ( min-width: 768px )  and ( max-width: 1024px )
+	#home
+		.chamada-cotacao
+			position: relative
+			top: 0%
+		.celular-protegid
+			font-size: 45px
+		.oferecemos
+			font-size: 20px
+		
+	

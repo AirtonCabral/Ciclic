@@ -60,7 +60,7 @@
 		methods: {
 			callNextPage() {
 				if(this.selectedCellphone){
-					window.location.href = 'http://localhost:8080/Contratacao?id='+ this.selectedCellphone
+					window.location.href = window.location.origin +'/Contratacao?id='+ this.selectedCellphone
 				}else {
 					alert('Preencha o campo e escolha o seu cellular...')
 				}	

@@ -2,9 +2,29 @@ html, body, #app {
   height: 100%;
   margin: 0;
   font-family: Oscine;
+  color: #324b68;
 }
 
 .container {
   max-width: 1264px !important;
+}
+
+.btn-danger {
+  background-color: #ff3796 !important;
+  border-color: #ff3796 !important;
+}
+
+.btn-success {
+  background-color: #00d2be !important;
+  border-color: #00d2be !important;
+}
+
+.modal .modal-header {
+  border: none;
+  padding: 0.5rem 1rem 0 1rem;
+}
+
+.modal .modal-dialog {
+  max-width: 400px !important;
 }
 /*# sourceMappingURL=App.css.map */

@@ -39,4 +39,30 @@
 #modal-login .v-input__slot .v-text-field__slot {
   border-bottom: 1px solid rgba(0, 0, 0, 0.2) !important;
 }
+
+#modal-login .v-messages__message {
+  color: red !important;
+}
+
+#modal-login .faca-login {
+  font-family: Oscine;
+  font-size: 32px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.19;
+  letter-spacing: normal;
+  color: #324b68;
+}
+
+#modal-login .digite-email {
+  font-family: Rubik;
+  font-size: 16px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.5;
+  letter-spacing: normal;
+  color: #324b68;
+}
 /*# sourceMappingURL=Login.css.map */
