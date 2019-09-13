@@ -68,7 +68,7 @@
                 axios.post('http://192.168.1.189:8080/cell-phone-insurance/v1/account/login', data, headers )
                     .then((response) => {
                         console.log(response)
-                        window.location.href = window.location.origin + '/cadastro'
+                        window.location.href = window.location.origin + '/cadastro/dados-pessoais'
                     })
                     .catch( (error) => {
                         console.log(error)

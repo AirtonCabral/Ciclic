@@ -1,13 +1,12 @@
 <template>
     <div>
-        <h1>Dados Pessoais</h1>
+        <h1>Endereço</h1>
     </div>
 </template>
 
 <script>
     export default {
-        nome: 'DadosPessoais',
-        components:{},
+        name: 'Endereco',
         data() {
             return {
                 
@@ -15,7 +14,3 @@
         },
     }
 </script>
-
-<style lang="scss" scoped>
-
-</style>

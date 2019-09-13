@@ -24,6 +24,12 @@
   margin-top: 50px;
 }
 
+#contratacao .box-infos .v-menu .v-menu__content {
+  top: 42px !important;
+  left: 0px !important;
+  padding-top: 0px;
+}
+
 #contratacao .box-infos .info-aparelho {
   padding: 25px;
   border-bottom: 1px solid rgba(150, 180, 205, 0.24);
