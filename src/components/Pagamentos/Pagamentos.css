@@ -1,0 +1,46 @@
+#Pagamentos {
+  background-color: white;
+  border-radius: 16px;
+  max-width: 500px;
+  padding: 25px;
+}
+
+#Pagamentos .title {
+  height: 20px;
+  font-family: Oscine;
+  font-size: 25px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.52;
+  letter-spacing: normal;
+  color: #324b68;
+}
+
+#Pagamentos .v-menu {
+  z-index: 19;
+  position: relative;
+}
+
+#Pagamentos .v-input__slot {
+  padding: 0;
+}
+
+#Pagamentos .v-text-field__slot {
+  border-bottom: 1px solid #000;
+}
+
+#Pagamentos .v-input--selection-controls__input {
+  margin-bottom: 0;
+}
+
+#Pagamentos .v-input--selection-controls__input label {
+  font-size: 14px;
+}
+
+#Pagamentos .v-menu .v-menu__content {
+  top: 0px !important;
+  left: 0px !important;
+  padding-top: 0px;
+}
+/*# sourceMappingURL=Pagamentos.css.map */

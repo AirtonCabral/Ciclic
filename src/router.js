@@ -3,15 +3,16 @@ import Contratacao from './components/Contratacao/Contratacao';
 import Cadastro  from './components/Cadastro/Cadastro';
 import DadosPessoais from  './components/DadosPessoais/DadosPessoais';
 import Endereco from './components/Endereco/Endereco'
+import Pagamentos from './components/Pagamentos/Pagamentos.vue'
 
 const routes = [
     { path: '/', component: Home },
     { path: '/contratacao' , component: Contratacao },
     { path: '/cadastro' , component: Cadastro,
         children: [
-        { path: 'dados-pessoais',  component: DadosPessoais },
+        { path: '',  component: DadosPessoais },
         { path: 'endereco',  component: Endereco },
-        // { path: 'pagamento',  component: },
+        { path: 'pagamentos',  component: Pagamentos },
         ]
     }
 ];

@@ -3,7 +3,7 @@
         <Header></Header>
         <v-breadcrumbs :items="items" divider=">"></v-breadcrumbs>
         <b-row>
-            <b-col sm="12" md="6">
+            <b-col sm="12" md="6" class="area-dados">
                 <router-view></router-view>     
             </b-col>
             <b-col sm="12" md="6" class="detalhes-pedido">
