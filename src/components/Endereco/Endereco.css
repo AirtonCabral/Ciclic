@@ -30,4 +30,15 @@
 #Endereco .v-text-field__slot {
   border-bottom: 1px solid #000;
 }
+
+#Endereco .v-input__slot {
+  padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 0;
+}
+
+#Endereco .v-text-field__details .v-messages__message {
+  color: red;
+}
 /*# sourceMappingURL=Endereco.css.map */

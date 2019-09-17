@@ -12,26 +12,26 @@
                         Resumo do pedido
                     </p>
                     <h1 class="aparelho">
-                        Samsung Galaxy J7 Prime SM-G610M 32GB
+                        {{cellphone.nome}}
                     </h1>
                 </div>
                 <div class="cotacao">
-                    <p class="valor">R$ 999,99 <spam class="bleh">por mês</spam></p>
+                    <p class="valor">R$ {{cellphone.preco}} <spam class="bleh">por mês</spam></p>
                 </div>
                 <div class="pagamento">
-                    <p>Pagamento: <spam>11x no cartão</spam> <br/>
+                    <p>Pagamento: <spam>{{cellphone.parcela}}x no cartão</spam> <br/>
                     Vigência do seguro: <spam>12 meses</spam></p>
                 </div>
                 <div class="cotacao">
                     <img src="../../assets/svg/icone-pdf.svg" class="icone-pdf"> Ver condições gerais do seu seguro
                 </div>
-                <b-row class="cotacao">
-                    <b-col sm=6 >
-                        <v-file-input label="File input"></v-file-input>
+                <b-row class="codigo-promocional">
+                    <b-col sm=8 >
+                        <v-file-input label="Código Promocional"></v-file-input>
                     </b-col>
-                    <b-col sm=6 >
+                    <b-col sm=4 >
                         <b-button class="quero-proteger"
-                                pill variant='outline-danger'>ATIVAR</b-button>
+                            block pill variant='outline-danger'>ATIVAR</b-button>
                     </b-col>
                 </b-row>      
             </b-col>
@@ -49,11 +49,12 @@
         },
         data() {
             return {
+                cellphone: {},
                 items: [
                 {
                     text: '1- Dados Pessoais',
                     disabled: false,
-                    href: 'dados-pessoais',
+                    href: 'cadastro',
                 },{
                     text: '2- Endereço',
                     disabled: true,
@@ -62,8 +63,20 @@
                     text: '3- Pagamentos',
                     disabled: true,
                     href: 'pagamentos',
-                }],
+                }]
             }
-        }
+        },
+        mounted() {
+            this.cellphone = JSON.parse(sessionStorage.getItem('cellphone'))
+            if(!cellphone){
+                this.$router.push('contratacao')
+            }
+        },
+        methods: {
+            dadosPessoaisCustomer() {
+                debugger
+                console.log(this.form)
+            }
+        },
     }
 </script>

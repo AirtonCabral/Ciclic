@@ -1,7 +1,8 @@
 #DadosPessoais {
   background-color: white;
   border-radius: 16px;
-  max-width: 500px;
+  max-width: 620px;
+  height: 500px;
   padding: 25px;
 }
 
@@ -25,9 +26,31 @@
 
 #DadosPessoais .v-input__slot {
   padding: 0;
+  margin: 0;
+  position: relative;
+  z-index: 0;
+}
+
+#DadosPessoais .v-text-field__details .v-messages__message {
+  color: red;
 }
 
 #DadosPessoais .v-text-field__slot {
   border-bottom: 1px solid #000;
+}
+
+#DadosPessoais .quero-proteger {
+  max-width: 390px;
+  height: 48px;
+  margin: 0 auto;
+}
+
+#DadosPessoais .v-menu .v-menu__content {
+  top: -25px !important;
+  left: 0px !important;
+  padding-top: 0px;
+  background-color: #1611ec;
+  position: absolute;
+  z-index: 99 !important;
 }
 /*# sourceMappingURL=DadosPessoais.css.map */

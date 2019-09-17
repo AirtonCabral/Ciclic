@@ -19,7 +19,7 @@
 						item-value="uuid">
 					</v-autocomplete>
 					<b-button
-						@click="() => callNextPage()"
+						@click="callNextPage()"
 						class="cotar-agora"
 						pill variant='danger' size='lg'>COTAR AGORA</b-button>
 				</b-col>
@@ -60,7 +60,7 @@
 		methods: {
 			callNextPage() {
 				if(this.selectedCellphone){
-					window.location.href = window.location.origin +'/Contratacao?id='+ this.selectedCellphone
+					this.$router.push({ path: 'contratacao', query: { id: this.selectedCellphone }})
 				}else {
 					alert('Preencha o campo e escolha o seu cellular...')
 				}	

@@ -67,6 +67,11 @@
   top: 4%;
 }
 
+#home #stripBB {
+  position: absolute;
+  bottom: -2px;
+}
+
 .v-menu .v-menu__content {
   top: 25px !important;
   left: 0px !important;

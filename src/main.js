@@ -3,6 +3,7 @@ import VueRouter from 'vue-router'
 import vuetify from './plugins/vuetify'
 import App from './App.vue'
 import BootstrapVue from 'bootstrap-vue'
+import Vuelidate from 'vuelidate'
 
 import routes from './router';
 
@@ -18,6 +19,7 @@ Vue.config.productionTip = false
 Vue.use(BootstrapVue)
 Vue.use(VueRouter)
 Vue.use(vuetify)
+Vue.use(Vuelidate)
 
 new Vue({
   vuetify,

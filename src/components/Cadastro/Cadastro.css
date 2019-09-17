@@ -24,9 +24,9 @@
 }
 
 #Cadastro .area-dados {
-  margin: 30px auto auto;
+  margin: 30px 20px auto auto;
   padding: 0px;
-  max-width: 500px;
+  max-width: 620px;
 }
 
 #Cadastro .detalhes-pedido {
@@ -34,7 +34,7 @@
   border-radius: 16px;
   max-width: 500px;
   max-height: 500px;
-  margin: 30px auto auto;
+  margin: 30px auto auto 20px;
 }
 
 #Cadastro .detalhes-pedido .info-aparelho {
@@ -100,5 +100,28 @@
   font-family: Oscine;
   font-size: 24px;
   color: #767d83;
+}
+
+#Cadastro .detalhes-pedido .codigo-promocional {
+  padding: 0px 25px 0px 25px;
+}
+
+#Cadastro .detalhes-pedido .codigo-promocional .v-input__prepend-outer {
+  margin-top: 13px;
+}
+
+#Cadastro .detalhes-pedido .codigo-promocional .v-input {
+  padding: 0px;
+  margin: 0px;
+}
+
+#Cadastro .detalhes-pedido .codigo-promocional .v-input .v-input__slot {
+  padding: 0;
+  margin: 0 5px;
+}
+
+#Cadastro .detalhes-pedido .codigo-promocional .v-input .v-text-field {
+  padding-top: 0px;
+  margin-top: 0px;
 }
 /*# sourceMappingURL=Cadastro.css.map */

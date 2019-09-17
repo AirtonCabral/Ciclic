@@ -12,7 +12,7 @@ const routes = [
         children: [
         { path: '',  component: DadosPessoais },
         { path: 'endereco',  component: Endereco },
-        { path: 'pagamentos',  component: Pagamentos },
+        { path: 'pagamento',  component: Pagamentos },
         ]
     }
 ];

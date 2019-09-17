@@ -19,6 +19,7 @@
 					<div class="cotacao">
 						<p v-if="somenteRoubo" class="valor">{{cellphonesDetails.theftPrice}} <spam>por mês</spam></p>
 						<p v-else class="valor">{{cellphonesDetails.completePrice}} <spam>por mês</spam></p>
+						bleh {{bleh}}
 						<v-checkbox
 							label="Somente contra roubo"
 							color="success"
@@ -54,7 +55,7 @@
 						</div>
 						<b-button class="quero-proteger"
 							:disabled="!bleh"
-							@click="modalShow = !modalShow"
+							@click='goToCadastro()'
 							pill variant='danger' size='lg'>QUERO PROTEGER AGORA</b-button>
 					</div>
 					<div class="cobertura">
@@ -91,13 +92,8 @@
 					</div>
 				</b-col>
 			</b-row>
-			<b-modal centered v-model="modalShow" hide-footer hide-top>
-				<Login ></Login>
-			</b-modal>
-			<b-modal centered v-model="modalForgetShow" hide-footer hide-top>
-				<RedefinePassword></RedefinePassword>
-			</b-modal>
-		</b-container>
+			<StripBB></StripBB>	
+		</b-container>	
 	</div>
 </template>
 
@@ -105,25 +101,24 @@
 	import axios from 'axios'
 
 	import Header from '../Header/Header';
-	import Login from "../Login/Login";
 	import RedefinePassword from '../RedefinePassword/RedefinePassword';
+	import StripBB from '../StripBB/SripBB'
 
 	export default {
 		name:'Contratacao',
 		components: {
 			Header,
-			Login,
-			RedefinePassword
+			RedefinePassword,
+			StripBB
 		},
 		data() {
 			return {
 				somenteRoubo: false,
-				modalShow: false,
-				modalForgetShow: false,
 				uuid: '',
 				cellphonesDetails: [
 					{name: ''}
 				],
+				cellphone:[],
 				fullPayment: [],
 				parcialPayment: [],
 				bleh: null,
@@ -151,7 +146,20 @@
 		methods: {
 			zeraParcelas() {
 				this.bleh = null
+			},
+			goToCadastro() {
+				this.$router.push({ path: 'cadastro' })
+				debugger
+				this.cellphone = {
+					parcela: this.bleh.parcela,
+					preco: this.bleh.preco,
+					nome: this.cellphonesDetails.name,
+					uuid: this.uuid,
+					somenteRoubo: this.somenteRoubo
+				}
+				sessionStorage.cellphone = JSON.stringify(this.cellphone)
 			}
+
 		},
 
 	}
