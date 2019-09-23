@@ -8,10 +8,12 @@
   line-height: normal;
   letter-spacing: normal;
   color: #324b68;
+  width: 100%;
 }
 
 #Cobertura .oferecemos-protecao {
   margin-top: 20px;
+  margin-bottom: 40px;
   width: 505px;
   font-family: Rubik;
   font-size: 18px;
@@ -19,6 +21,80 @@
   font-style: normal;
   font-stretch: normal;
   line-height: 1.56;
+  letter-spacing: normal;
+  color: #4e5356;
+}
+
+#Cobertura .cada-cobertura {
+  margin: 55px auto;
+}
+
+#Cobertura .cada-cobertura .icone-quebra {
+  width: 65px;
+  height: 95px;
+  text-align: center;
+}
+
+#Cobertura .cada-cobertura .descricao-quebra {
+  margin-bottom: 0;
+  font-size: 16px;
+}
+
+#Cobertura .cada-cobertura .descricao-quebra h3 {
+  font-family: Oscine;
+  font-size: 24px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #324b68;
+}
+
+#Cobertura .cada-cobertura .seta {
+  width: 100%;
+  margin: 10px auto 20px auto;
+}
+
+#Cobertura .cada-cobertura .seta img {
+  width: 100%;
+}
+
+#Cobertura .cada-cobertura .celular-vector {
+  text-align: center;
+}
+
+#Cobertura .cansado-susto {
+  margin: auto;
+}
+
+#Cobertura .cansado-susto button {
+  margin: auto;
+  font-family: Oscine;
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  margin: 20px auto;
+}
+
+#Cobertura .cansado-susto h1 {
+  font-size: 32px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  color: #324b68;
+  margin: 20px auto;
+}
+
+#Cobertura .cansado-susto p {
+  font-family: Rubik;
+  font-size: 18px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.44;
   letter-spacing: normal;
   color: #4e5356;
 }
