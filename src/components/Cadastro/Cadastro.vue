@@ -68,14 +68,12 @@
         },
         mounted() {
             this.cellphone = JSON.parse(sessionStorage.getItem('cellphone'))
-            if(!cellphone){
+            if(!this.cellphone){
                 this.$router.push('contratacao')
             }
         },
         methods: {
             dadosPessoaisCustomer() {
-                debugger
-                console.log(this.form)
             }
         },
     }

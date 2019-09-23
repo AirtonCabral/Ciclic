@@ -2,8 +2,8 @@
 	<div id="home">
 		<Header>
 		</Header>
-		<b-container class="chamada-cotacao">
-			<b-row>
+		<b-row class="wrapper">
+			<b-container class="chamada-cotacao">
 				<b-col cols="6" >
 					<p class="celular-protegid">
 						Seu celular protegido por quem se importa
@@ -23,23 +23,32 @@
 						class="cotar-agora"
 						pill variant='danger' size='lg'>COTAR AGORA</b-button>
 				</b-col>
-			</b-row>
-		</b-container>
-		<StripBB></StripBB>
+			</b-container>
+		</b-row>
+		<StripBB />
+		<Vantagens />
+		<ComoFunciona />
+		<Cobertura />
 	</div>
 </template>
 
 <script>
 	import axios from 'axios'
 
-	import Header from '../Header/Header.vue';
+	import Header from '../Header/Header';
 	import StripBB from '../StripBB/SripBB';
+	import Vantagens from "../Vantagens/Vantagens";
+	import ComoFunciona from "../ComoFunciona/ComoFunciona";
+	import Cobertura from "../Cobertura/Cobertura";
 
 	export default {
 		name: 'Home',
 		components: {
 			Header,
-			StripBB
+			StripBB,
+			Vantagens,
+			ComoFunciona,
+			Cobertura
 		},
 		props: {},
 		data: () => {

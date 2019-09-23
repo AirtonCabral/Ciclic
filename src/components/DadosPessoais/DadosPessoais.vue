@@ -113,13 +113,10 @@
         watch: {},
         methods: {
             submit () {
-                debugger
                 this.formHasErrors = false
-                
                 Object.keys(this.form).forEach(f => {
                     if (!this.form[f])  this.formHasErrors = true 
                         this.$refs[f].validate(true)
-                        console.log(this.form)
                     })
 
                 if( !this.formHasErrors ){ 

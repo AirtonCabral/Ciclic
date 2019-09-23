@@ -101,14 +101,12 @@
 	import axios from 'axios'
 
 	import Header from '../Header/Header';
-	import RedefinePassword from '../RedefinePassword/RedefinePassword';
 	import StripBB from '../StripBB/SripBB'
 
 	export default {
 		name:'Contratacao',
 		components: {
 			Header,
-			RedefinePassword,
 			StripBB
 		},
 		data() {
@@ -148,8 +146,6 @@
 				this.bleh = null
 			},
 			goToCadastro() {
-				this.$router.push({ path: 'cadastro' })
-				debugger
 				this.cellphone = {
 					parcela: this.bleh.parcela,
 					preco: this.bleh.preco,
@@ -158,6 +154,7 @@
 					somenteRoubo: this.somenteRoubo
 				}
 				sessionStorage.cellphone = JSON.stringify(this.cellphone)
+				this.$router.push({ path: 'cadastro' })
 			}
 
 		},

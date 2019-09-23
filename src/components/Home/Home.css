@@ -1,9 +1,16 @@
 #home {
   height: 100%;
+}
+
+#home .wrapper {
   background-image: url("~@/assets/img/hero.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 80px;
+  padding-bottom: 80px;
+  margin-top: -63px;
+  height: 820px;
 }
 
 #home .celular-protegid {
@@ -65,11 +72,6 @@
 #home .chamada-cotacao {
   position: relative;
   top: 4%;
-}
-
-#home #stripBB {
-  position: absolute;
-  bottom: -2px;
 }
 
 .v-menu .v-menu__content {
